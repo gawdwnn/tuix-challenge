@@ -11,7 +11,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     }
 
     const [Spearmen, Swordsmen, Archers] = generate(value);
-    
+
     res.status(200).json({ Spearmen, Swordsmen, Archers });
   }
 }
