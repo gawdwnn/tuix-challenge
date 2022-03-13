@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    error && setTimeout(() => setError(false), 500);
+    error && setTimeout(() => setError(false), 1000);
   }, [error]);
 
   const handleSubmit = async () => {
